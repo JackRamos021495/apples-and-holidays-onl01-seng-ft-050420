@@ -90,6 +90,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |holiday, season|
     holiday.each do |holiday_name, supply|
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
