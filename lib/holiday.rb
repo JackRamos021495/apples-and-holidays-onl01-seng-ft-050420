@@ -59,20 +59,11 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
       holiday.each do |season_holidays, props|
         if season_holidays !== holiday_name
           season_holidays << holiday_name
+        end
       end
     end
   end
       holiday_hash
-      holiday_hash.each do|seasons, holiday|
-        if seasons == season
-          holiday.each do |season_holidays, props|
-            if season_holidays !== holiday_name
-              holiday << holiday_name
-              holiday_hash
-              binding.pry
-          end
-        end
-      end
 end
 
 def all_winter_holiday_supplies(holiday_hash)
